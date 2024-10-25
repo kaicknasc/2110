@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blacktransparent: #00000049;
+    --gray: #2a2829;
+    --gray2: #383939;
+    --pink: #fd135a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    background-color: var(--gray);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+    background-color: var(--blacktransparent);
+
+    backdrop-filter: blur(5px);
+
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 999;
+}
+
+#titule {
+    color: var(--pink);
+    font-weight: 200;
+}
+
+#titule::first-letter {
+    font-size: 1.4em;
+}
+
+span {
+    color: gray;
+    font-weight: 500;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8em;
+}
+
+.link a {
+    color: gray;
+
+    fott-weight: 400;
+
+    text-decoration: none;
+    transition: 00.5s;
+
+}
+.link a:hover{
+    color: var(--pink);
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8em;
+}
+
+i{
+    background-color: gray;
+    border-radius: 100%;
+    padding: 0.2em;
+    font-size: 1.5em;
+}
+
+button {
+    background-color: var(--pink);
+    border: none;
+    padding: 10px 14px;
+}
+/* ---------------------------------------------------------------------- */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+   
+
+}
+.home h2{
+   font-size: 6rem;
+   color: none;
+   -webkit-text-stroke: 2px ;
+   -webkit-text-stroke-color: white ;
+
+
+}
+.future{
+    color: var(--pink);
+    -webkit-text-stroke: none;
+    
+}
+
+.home img {
+    width: 980px;
+    border-radius: 1em;
+    box-shadow: 0 0 15px var(--gray2);
+}
+
+#texto{
+    font-weight: 200;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+
+}
